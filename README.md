@@ -12,7 +12,7 @@ Proyecto base para lanzar tu negocio online con Astro 5.9.3 y Tailwind CSS 4. In
 - **Responsive y optimizado para móviles**.
 
 ## 📦 Estructura del proyecto
-src/ components/ Navbar.astro HeroSection.astro ServicesSection.astro ServiceCard.astro BenefitsSection.astro BenefitItem.astro ContactSection.astro Footer.astro layouts/ BaseLayout.astro pages/ index.astro styles/ global.css public/ (archivos estáticos e imágenes)
+src/ components/ Navbar.astro HeroSection.astro ServicesSection.astro ServiceCard.astro BenefitsSection.astro BenefitItem.astro ContactSection.astro Footer.astro layouts/ Layout.astro pages/ index.astro styles/ global.css public/ (archivos estáticos e imágenes)
 
 
 ## 🛠️ Instalación
