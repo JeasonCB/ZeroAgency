@@ -24,7 +24,7 @@ const whatsappUrl = `https://wa.me/${whatsappNumber}?text=Hola!%20Estoy%20intere
             <a
                 href={whatsappUrl}
                 target="_blank"
-                class="inline-flex items-center justify-center bg-whatsapp text-white font-bold py-4 px-8 rounded-lg text-lg hover:bg-opacity-90 transition-all shadow-xl"
+                class="inline-flex items-center justify-center bg-whatsapp text-white font-bold py-4 px-8 rounded-lg lg:text-lg text-base hover:bg-opacity-90 transition-all shadow-xl"
             >
                 <svg
                     class="w-7 h-7 mr-3"
@@ -38,9 +38,6 @@ const whatsappUrl = `https://wa.me/${whatsappNumber}?text=Hola!%20Estoy%20intere
                 </svg>
                 Hablar por WhatsApp
             </a>
-            <p class="mt-4 text-gray-400 text-xs">
-                Recuerda reemplazar el número +{whatsappNumber} en el código.
-            </p>
         </div>
     </div>
 </section>
