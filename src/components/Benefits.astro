@@ -1,0 +1,51 @@
+---
+import BenefitItem from "./BenefitItem.astro";
+
+const benefits = [
+    {
+        image: "https://placehold.co/600x400/FF4500/FFFFFF?text=Ahorro+y+Velocidad",
+        title: "Ahorra Miles de Dólares y Semanas de Trabajo",
+        description:
+            "Un desarrollo web a medida puede costar más de $1,500 y tardar meses. Con nuestro kit digital, obtienes una presencia online profesional, funcional y elegante por una fracción del costo y en tiempo récord.",
+        reverse: false,
+    },
+    {
+        image: "https://placehold.co/600x400/0A2540/FFFFFF?text=Confianza+y+Profesionalismo",
+        title: "Luce Profesional y Genera Confianza al Instante",
+        description:
+            "Una imagen de marca coherente y una web pulida hacen que los clientes te tomen en serio desde el primer clic. Aumenta tu credibilidad, diferénciate de la competencia y cierra más ventas.",
+        reverse: true,
+    },
+    {
+        image: "https://placehold.co/600x400/32CD32/FFFFFF?text=Atrae+Clientes+24/7",
+        title: "Atrae Clientes 24/7 con una Base para SEO",
+        description:
+            "No solo te creamos una web bonita; construimos una base técnica sólida para que futuros clientes te encuentren en Google y otros buscadores. Es una inversión que trabaja para ti, incluso mientras duermes.",
+        reverse: false,
+    },
+];
+---
+
+<section id="beneficios" class="py-20 bg-secondary">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold mb-2">
+                Invierte en Crecimiento, No en Complejidad
+            </h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+                Más que un servicio, es el atajo inteligente para lanzar tu
+                marca.
+            </p>
+        </div>
+        {
+            benefits.map((benefit) => (
+                <BenefitItem
+                    image={benefit.image}
+                    title={benefit.title}
+                    description={benefit.description}
+                    reverse={benefit.reverse}
+                />
+            ))
+        }
+    </div>
+</section>

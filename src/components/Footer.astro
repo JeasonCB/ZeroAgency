@@ -1,0 +1,22 @@
+---
+export interface Props {
+    companyName?: string;
+    year?: number;
+    subtitle?: string;
+}
+
+const {
+    companyName = "TuMarca",
+    year = new Date().getFullYear(),
+    subtitle = "Tu primer paso al éxito digital en España, Latinoamérica y Venezuela.",
+} = Astro.props;
+---
+
+<footer class="bg-primary text-white py-10">
+    <div class="container mx-auto px-6 text-center">
+        <p>&copy; {year} {companyName}. Todos los derechos reservados.</p>
+        <p class="text-sm text-gray-400 mt-1">
+            {subtitle}
+        </p>
+    </div>
+</footer>

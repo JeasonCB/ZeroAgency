@@ -1,0 +1,26 @@
+@import "tailwindcss";
+/* @plugin "daisyui"; */
+
+@theme {
+  --font-family-sans: "Poppins", sans-serif;
+  --color-primary: #0A2540;
+  --color-secondary: #F6F9FC;
+  --color-accent: #FF4500;
+  --color-whatsapp: #25D366;
+}
+
+/* Estilos globales adicionales */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family-sans);
+}
+
+/* Aplica a html y body */
+html, body, main {
+  scrollbar-width: none ;      /* Firefox */
+/* Firefox */
+}
+

@@ -1,48 +1,57 @@
-# Astro Starter Kit: Basics
+# Zero - Kit Digital Astro
 
-```sh
-npm create astro@latest -- --template basics
-```
+Proyecto base para lanzar tu negocio online con Astro 5.9.3 y Tailwind CSS 4. Incluye estructura modular, componentes reutilizables y estilos personalizados.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## 🚀 Características
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+- **Astro 5.9.3**: Framework moderno para sitios rápidos y optimizados.
+- **Tailwind CSS 4**: Utilidad para estilos rápidos y personalizables.
+- **Componentes modulares**: Navbar, Hero, Servicios, Beneficios, Contacto y Footer.
+- **Colores y fuentes personalizadas**.
+- **SEO y metadatos sociales listos**.
+- **Responsive y optimizado para móviles**.
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## 📦 Estructura del proyecto
+src/ components/ Navbar.astro HeroSection.astro ServicesSection.astro ServiceCard.astro BenefitsSection.astro BenefitItem.astro ContactSection.astro Footer.astro layouts/ BaseLayout.astro pages/ index.astro styles/ global.css public/ (archivos estáticos e imágenes)
 
-## 🚀 Project Structure
 
-Inside of your Astro project, you'll see the following folders and files:
+## 🛠️ Instalación
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+1. Clona el repositorio:
+   ```bash
+   git clone <url-del-repo>
+   cd Zero
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+### Instala dependencias:
+```npm install
+#### Inicia el servidor de desarrollo:
+``` npm run dev
+Abre http://localhost:4321 en tu navegador.
 
-## 🧞 Commands
+🖌️ Personalización
+Colores y fuentes: Edita src/styles/global.css para cambiar colores y tipografías.
+Contenido: Modifica los archivos en src/components/ y src/pages/index.astro para adaptar textos, imágenes y enlaces.
+SEO: Ajusta los metadatos en src/layouts/BaseLayout.astro.
 
-All commands are run from the root of the project, from a terminal:
+🏗️ Estructura de componentes
+Navbar.astro: Menú de navegación.
+HeroSection.astro: Sección principal de bienvenida.
+ServicesSection.astro y ServiceCard.astro: Servicios ofrecidos.
+BenefitsSection.astro y BenefitItem.astro: Beneficios destacados.
+ContactSection.astro: Llamada a la acción y contacto por WhatsApp.
+Footer.astro: Pie de página.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+🧑‍💻 Desarrollo
+Estilos: Usa clases de Tailwind para personalizar rápidamente.
+Props: Los componentes aceptan props para mayor flexibilidad.
+Imágenes: Coloca imágenes en public/ o usa URLs externas.
 
-## 👀 Want to learn more?
+📝 Notas
+Si modificas los colores en global.css, asegúrate de usar las clases de Tailwind (bg-primary, bg-secondary, etc.) en tus componentes.
+No se utiliza DaisyUI por defecto para evitar conflictos de colores.
+Compatible con despliegue en Vercel, Netlify, etc.
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+📄 Licencia
+Este proyecto es para uso puramente personal. No está permitido su uso comercial, redistribución ni publicación como propio.
+
+Hecho con ❤️ usando Astro y Tailwind CSS.
