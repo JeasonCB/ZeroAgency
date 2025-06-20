@@ -14,7 +14,7 @@ const {
 } = Astro.props;
 ---
 
-<header class="bg-secondary relative ">
+<header class="bg-secondary relative">
     <div class="container mx-auto px-6 py-20 md:py-32 text-center lg:px-20">
         <h1
             class="text-4xl md:text-6xl font-bold text-primary leading-tight mb-4"
@@ -38,7 +38,11 @@ const {
     </div>
 
     <!-- Flecha Guía Animada -->
-    <a href="#servicios" class="absolute bottom-4 lg:botton-8 left-1/2 -translate-x-1/2">
+    <a
+        href="#servicios"
+        aria-label="Ir a la sección de servicios"
+        class="absolute bottom-4 lg:botton-8 left-1/2 -translate-x-1/2"
+    >
         <div class="w-10 h-10 text-primary animate-bounce">
             <svg
                 xmlns="http://www.w3.org/2000/svg"
